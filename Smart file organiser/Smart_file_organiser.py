@@ -5,7 +5,7 @@ print(os.getcwd())
 
 lst = os.listdir()
 
-folders = ["Images","Documents","Audio", "Vedios", "Python","Other"]
+folders = ["Images","Documents","Audio", "Videos", "Python","Other"]
 
 for folder in folders:
     if not os.path.exists(folder):
@@ -31,7 +31,7 @@ for items in lst:
 
     elif extension == ".mp4":
         old_path = os.path.join(os.getcwd(),items)
-        new_path = os.path.join(os.getcwd(),"Vedios",items)
+        new_path = os.path.join(os.getcwd(),"Videos",items)
         os.rename(old_path,new_path)
 
     elif extension == ".py":
